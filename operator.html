@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연산자</title>
+  </head>
+  <body>
+    <script>
+      // 1. 산술연산자
+      // 2. 할당연산자
+      let a = 10;
+      console.log(a); // 10
+
+      a += 3; //   a = a + 3;
+      a -= 1; // a = a - 1;
+      a *= 2; // a = a * 2;
+      a /= 10; // a = a / 10;
+      a %= 5; // a = a % 5;
+      a += "하세요!"; // a = a + "하세요!"
+      //   console.log(a);
+
+      // 3. 비교연산자
+      let c = 3;
+      let d = "3";
+      let e = 5;
+      let f = "5";
+
+      console.log(c == d); // 값이 같냐? true
+      console.log(c === d); // 데이터타입까지 같냐? false
+      console.log(c != d); // 데이터 값이 다르다? false
+      console.log(c !== d); // 데이터 타입이 다르다? true
+      console.log(c > e); // 데이터 값이 크다? false
+      console.log(c >= e); // 데이터 값이 크거나 같냐? fasle
+
+      // 4. 논리연산자
+      // 두 개의 조건이 있을 때 사용
+      // &&(AND), ||(OR), !(NOT)
+      console.log(c == d && c > e); // false
+      console.log(c === d && c < e); // false (하나가 이미 false면 뒤에는 검토조차 안함)
+      console.log(c === d || c < e); // true (앞에가 false일때만 다음 것 확인하러 감)
+      console.log(c == d || c > e); // true (하나가 이미 false면 뒤에는 검토조차 안함)
+
+      let bool = true;
+      console.log(bool); // true
+      console.log(!bool); // false (true가 아니다.)
+    </script>
+  </body>
+</html>
